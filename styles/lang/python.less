@@ -1,0 +1,26 @@
+/*
+ * Syntax tweaks for Python
+ */
+.syntax--source.syntax--python {
+  .syntax--entity.syntax--name {
+    &.syntax--function.syntax--decorator {
+      color: @aqua;
+    }
+
+    &.syntax--type.syntax--class {
+      color: @yellow;
+    }
+  }
+
+  .syntax--storage {
+    &.syntax--type {
+      &.syntax--class {
+        color: @lilac;
+      }
+
+      &.syntax--function {
+        color: @lilac;
+      }
+    }
+  }
+}

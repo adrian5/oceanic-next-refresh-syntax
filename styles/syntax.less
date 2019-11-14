@@ -1,0 +1,181 @@
+/*
+ * Generic matching of language syntax
+ */
+.syntax--comment {
+  color: @syntax-color-comment;
+  font-style: italic;
+
+  .syntax--markup.syntax--link {
+    color: @syntax-color-comment; // Links in comments shouldn't stand out
+  }
+}
+
+.syntax--constant {
+  color: @aqua;
+
+  &.syntax--character.syntax--escape {
+    color: @aqua;
+  }
+
+  &.syntax--numeric {
+    color: @orange;
+  }
+
+  &.syntax--variable {
+    color: @red;
+  }
+}
+
+.syntax--entity {
+  &.syntax--name {
+    &.syntax--class {
+      color: @yellow;
+    }
+
+    &.syntax--function {
+      color: @blue;
+    }
+
+    &.syntax--tag {
+      color: @red;
+    }
+
+    &.syntax--type.syntax--class {
+      color: @yellow;
+    }
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    color: @blue;
+  }
+}
+
+.syntax--invalid {
+  &.syntax--deprecated {
+    color: @dark-1 !important;
+    background-color: @lilac !important;
+  }
+  &.syntax--illegal {
+    color: @dark-1 !important;
+    background-color: @red !important;
+  }
+}
+
+.syntax--keyword {
+  color: @lilac;
+
+  &.syntax--control {
+    color: @lilac;
+  }
+
+  &.syntax--operator {
+    color: @aqua;
+  }
+
+  &.syntax--other.syntax--unit {
+    color: @orange;
+  }
+}
+
+.syntax--markup {
+  &.syntax--bold {
+    color: @yellow;
+    font-weight: bold;
+  }
+
+  &.syntax--italic {
+    color: @lilac;
+    font-style: italic;
+  }
+
+  &.syntax--heading {
+    color: @blue;
+    font-weight: bold;
+  }
+
+  &.syntax--link {
+    color: @green;
+  }
+
+  &.syntax--quote {
+    color: @green;
+  }
+
+  &.syntax--raw {
+    color: @aqua;
+  }
+}
+
+.syntax--meta {
+  &.syntax--tag {
+    color: @aqua;
+  }
+}
+
+.syntax--none {
+ color: @syntax-text-color;
+}
+
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--bold {
+      color: @yellow;
+      font-weight: bold;
+    }
+
+    &.syntax--comment {
+      color: @dark-3;
+    }
+
+    &.syntax--heading {
+      color: @blue;
+    }
+
+    &.syntax--italic {
+      color: @lilac;
+      font-style: italic;
+    }
+  }
+}
+
+.syntax--storage {
+  color: @lilac;
+
+  &.syntax--type {
+    color: @yellow;
+  }
+}
+
+.syntax--string {
+  color: @green;
+
+  .syntax--embedded {
+    color: @aqua;
+  }
+
+  &.syntax--other.syntax--link {
+    color: @red;
+  }
+
+  > .syntax--source {
+    color: @aqua;
+  }
+}
+
+.syntax--support {
+  &.syntax--type {
+    color: @yellow;
+  }
+
+  &.syntax--function  {
+    color: @light-4;
+
+    &.syntax--any-method {
+      color: @lilac;
+    }
+  }
+}
+
+.syntax--variable {
+  color: @red;
+}

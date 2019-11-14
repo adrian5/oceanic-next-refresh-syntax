@@ -1,0 +1,16 @@
+/*
+ * Syntax tweaks for LESS
+ *
+ * NOTE:
+ * LESS relies heavily on CSS selectors, so be mindful of what you inherit here. See `./css.less`
+ * for details.
+ */
+.syntax--source.syntax--css.syntax--less {
+  .syntax--entity.syntax--other.syntax--attribute-name.syntax--parent-selector {
+    color: @red;
+  }
+
+  .syntax--variable {
+    color: @aqua;
+  }
+}

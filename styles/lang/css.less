@@ -1,0 +1,23 @@
+/*
+ * Syntax tweaks for CSS
+ *
+ * NOTE:
+ * Be mindful of cross-polination towards LESS and SCSS, as they make heavy use of CSS selectors
+ * and inherit the `.syntax--css` style root. Only very narrowly scoped selectors (direct
+ * descendants) would prevent this, but may be undesirable for other reasons.
+ */
+.syntax--source.syntax--css {
+  .syntax--entity.syntax--other.syntax--attribute-name {
+    &.syntax--id {
+      color: @red;
+    }
+
+    &.syntax--class {
+      color: @red;
+    }
+  }
+
+  .syntax--support.syntax--function {
+    color: @blue;
+  }
+}

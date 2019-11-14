@@ -1,0 +1,42 @@
+/*
+ * Syntax tweaks for JavaScript
+ */
+.syntax--source.syntax--js {
+  .syntax--comment { // Targeting mostly JSDoc comments here, who'd be distractingly colorful
+    .syntax--keyword {
+      color: lighten(@syntax-color-comment, 10%);
+    }
+
+    .syntax--support {
+      color: lighten(@syntax-color-comment, 8%);
+    }
+
+    .syntax--variable {
+      color: lighten(@syntax-color-comment, 22%);
+    }
+  }
+
+  .syntax--embedded.syntax--source {
+    color: @yellow;
+  }
+
+  .syntax--entity.syntax--name.syntax--tag {
+    color: @lilac;
+  }
+
+  .syntax--function {
+    &.syntax--arrow {
+      color: @syntax-text-color;
+    }
+  }
+
+  .syntax--variable.syntax--other {
+    &.syntax--object.syntax--property {
+      color: @yellow;
+
+      &.syntax--unquoted {
+        color: @red;
+      }
+    }
+  }
+}

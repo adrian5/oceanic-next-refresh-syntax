@@ -1,0 +1,53 @@
+/*
+ * Minimal set of syntax-variables to satisfy Atom theme requirements
+ */
+@import "./oceanic.less";
+
+// @debug: #ff00b0; // signal color enabled during debugging
+
+/* Text */
+@syntax-text-color: @light-4;
+@syntax-background-color: @black;
+@syntax-selection-color: lighten(@black, 10%);
+@syntax-selection-flash-color: @light-4;
+
+/* Editor */
+@syntax-cursor-color:              @light-2;
+@syntax-cursor-line:               lighten(@syntax-background-color, 6%);
+@syntax-indent-guide-color:        lighten(@syntax-background-color, 7%);
+@syntax-wrap-guide-color:          lighten(@syntax-background-color, 4%);
+@syntax-invisible-character-color: @syntax-indent-guide-color;
+
+/* Gutter */
+@syntax-gutter-text-color:                @dark-3;
+@syntax-gutter-background-color:          darken(@syntax-background-color, 1.0%);
+@syntax-gutter-text-color-selected:       @light-4;
+@syntax-gutter-background-color-selected: @syntax-cursor-line;
+
+/* Git */
+@syntax-color-added:    #6dc763; // @green is too weak (low saturation)
+@syntax-color-modified: @yellow;
+@syntax-color-removed:  @red
+@syntax-color-renamed:  @lilac;
+
+/* Marker */
+@syntax-result-marker-color:          lighten(@syntax-background-color, 20%);
+@syntax-result-marker-color-selected: lighten(@syntax-result-marker-color, 30%);
+@syntax-bracket-matcher-color:        lighten(@syntax-selection-color, 20%);
+
+/* Syntax (Required) */
+@syntax-color-attribute: @lilac;
+@syntax-color-class:     @yellow;
+@syntax-color-constant:  @aqua;
+@syntax-color-function:  @syntax-text-color;
+@syntax-color-import:    @red;
+@syntax-color-keyword:   @lilac;
+@syntax-color-method:    @blue;
+@syntax-color-property:  @yellow;
+@syntax-color-snippet:   @syntax-text-color;
+@syntax-color-tag:       @aqua;
+@syntax-color-value:     @orange;
+@syntax-color-variable:  @red;
+
+/* Syntax (Extended) */
+@syntax-color-comment:   @dark-3;

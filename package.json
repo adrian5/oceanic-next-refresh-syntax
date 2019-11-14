@@ -1,0 +1,19 @@
+{
+  "name": "oceanic-next-refresh-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description":
+    "A dark, blueish-green syntax theme",
+  "keywords": [
+    "blue",
+    "green",
+    "dark",
+    "ocean",
+    "theme"
+  ],
+  "repository": "https://github.com/adrian5/oceanic-next-refresh-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  }
+}

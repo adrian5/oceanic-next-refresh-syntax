@@ -1,0 +1,22 @@
+/*
+ * Syntax tweaks for JSON
+ */
+.syntax--source.syntax--json {
+  .syntax--constant {
+    &.syntax--language {
+      color: @red;
+    }
+    &.syntax--numeric {
+      color: @yellow;
+    }
+  }
+
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--json {
+    & > .syntax--string.syntax--quoted.syntax--json {
+      color: @blue;
+      & > .syntax--punctuation {
+        color: @blue;
+      }
+    }
+  }
+}
