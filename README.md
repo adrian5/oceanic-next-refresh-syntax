@@ -1,5 +1,7 @@
 # Oceanic Next Refresh
 
+![Current release](https://img.shields.io/apm/v/oceanic-next-refresh-syntax?color=5fb3b3)
+
 A syntax theme for [Atom](https://github.com/atom/atom), inspired by the lovely
 [oceanic-next](https://github.com/smlombardi/oceanic-next-syntax) – with extensibility in mind.
 
