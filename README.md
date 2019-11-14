@@ -8,6 +8,7 @@ A syntax theme for [Atom](https://github.com/atom/atom), inspired by the lovely
 ![JavaScript](screenshots/javascript.png)
 ![HTML](screenshots/html.png)
 ![CSS](screenshots/css.png)
+![C++](screenshots/cpp.png)
 
 See also: original [Oceanic Next](https://labs.voronianski.com/oceanic-next-color-scheme/) theme.
 
