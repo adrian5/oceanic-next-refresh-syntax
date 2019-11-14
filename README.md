@@ -18,4 +18,4 @@ apm install oceanic-next-refresh-syntax
 ## Contributing
 
 For feedback and requests, please use the Issue tracker. If you want better highlighting for your
-language of choice, please include code snippets if possible; the more syntax, the better!
+language of choice, please include code samples if possible; the more syntax, the better!
