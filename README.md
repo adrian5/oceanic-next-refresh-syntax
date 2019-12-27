@@ -2,8 +2,8 @@
 
 ![Current release](https://img.shields.io/apm/v/oceanic-next-refresh-syntax?color=5fb3b3)
 
-A syntax theme for [Atom](https://github.com/atom/atom), inspired by the lovely
-[oceanic-next](https://github.com/smlombardi/oceanic-next-syntax) – with extensibility in mind.
+A syntax theme for [Atom](https://atom.io/), inspired by the lovely
+[oceanic-next](https://atom.io/themes/oceanic-next) – with extensibility in mind.
 
 ![JavaScript](https://raw.githubusercontent.com/adrian5/oceanic-next-refresh-syntax/master/screenshots/javascript.png)
 ![HTML](https://raw.githubusercontent.com/adrian5/oceanic-next-refresh-syntax/master/screenshots/html.png)
