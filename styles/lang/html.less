@@ -1,9 +1,28 @@
 /*
  * Syntax tweaks for HTML
  */
+ .syntax--source.syntax--html {
+   .syntax--doctype {
+     color: @blue;
+   }
+
+   .syntax--entity.syntax--attribute-name {
+     color: @yellow; // Better contrast against punctuation
+   }
+
+   .syntax--punctuation {
+     color: @aqua;
+
+     &.syntax--string {
+       color: @green;
+     }
+   }
+ }
+
+/* TextMate grammar */
 .syntax--text.syntax--html {
   .syntax--entity.syntax--other.syntax--attribute-name {
-    color: @yellow; // Better attribute contrast against `=` and "strings"
+    color: @yellow; // Better constrast against punctuation
   }
 
   .syntax--meta.syntax--tag.syntax--sgml.syntax--doctype {
