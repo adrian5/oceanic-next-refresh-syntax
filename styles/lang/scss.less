@@ -6,36 +6,39 @@
  * for details.
  *
  * The current tokenizer has limitations, e.g.:
- * - The CSS 'font' property is interpreted as an HTML <font> tag
- * - Keys in `prop: {key: value}` share a selector with values in `prop: value`
- * This should get better once Atom ships with a Tree-Sitter implementation.
+ * - CSS properties that match HTML5 tags (e.g. 'font', 'content') are misinterpreted
+ * - `prop: value` and  `prop: {key: value}` share a selector for content after the first colon.
  */
-.syntax--source.syntax--css.syntax--scss {
-  .syntax--entity {
-    &.syntax--name.syntax--tag.syntax--reference {
-      color: @red;
-    }
-
-    &.syntax--other {
-      color: @red;
+.syntax--source.syntax--scss {
+  .syntax--import {
+    .syntax--punctuation.syntax--keyword {
+      color: @lilac;
     }
   }
 
-  .syntax--meta.syntax--definition.syntax--variable {
-    color: @syntax-text-color;
-  }
-
-  .syntax--property-list {
-    .syntax--tag {
-      color: @yellow;
-    }
-
-    .syntax--pseudo-class {
-      color: @blue;
-    }
-  }
-
-  .syntax--variable.syntax--scss {
+  .syntax--property-value {
     color: @aqua;
+  }
+
+  .syntax--punctuation {
+    &.syntax--bracket {
+      color: @syntax-text-color;
+    }
+
+    &.syntax--key-value {
+      color: @syntax-text-color;
+    }
+
+    &.section {
+      color: @syntax-text-color;
+    }
+
+    &.syntax--string {
+      color: @green;
+    }
+  }
+
+  .syntax--variable {
+    color: @lilac;
   }
 }
